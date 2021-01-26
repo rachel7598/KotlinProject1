@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.MyPetsFragment">
+
+    <data>
+        <variable
+            name="MyPetsViewModel"
+            type="com.example.android.kotlinproject1.MyPetsViewModel"/>
+        <variable
+            name="pet"
+            type="com.example.android.kotlinproject1.models.Pet"/>
+    </data>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/new_pet_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentBottom="true"
+           android:clickable="true"
+           android:layout_margin="10dp"
+           android:focusable="true"
+           android:contentDescription="@string/new_pet_button" />
+
+
+    <ScrollView
+        android:id="@+id/petsListScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my_pets_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mclaren"
+                android:paddingVertical="16dp"
+                android:text="@string/my_pets"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+   </RelativeLayout>
+</layout>

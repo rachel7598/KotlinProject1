@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">KotlinProject1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pet_profile">Pet Profiles</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="pet_profile_logo">pet profile logo</string>
+    <string name="welcome_message">Welcome to Pet Profiles! This app helps you have your pet\'s details on hand at all times. Let\'s take a quick look at how to use Pet Profiles</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="welcome">Welcome!</string>
+    <string name="how_to_use_this_app">How to Use This App</string>
+    <string name="name">Name:</string>
+    <string name="dob">DOB:</string>
+    <string name="my_pets">My Pets</string>
+    <string name="new_pet_button">New Pet Button</string>
+    <string name="add_your_new_pet">Add Your New Pet</string>
+    <string name="dob_hint">date of birth</string>
+    <string name="their_date_of_birth">date of birth</string>
+    <string name="their_name">their name</string>
+    <string name="favourite_toy">favourite toy</string>
+    <string name="favourite_food">favourite food</string>
+    <string name="save">Save</string>
+</resources>
