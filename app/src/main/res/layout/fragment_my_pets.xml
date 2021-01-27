@@ -6,14 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.navigation.MyPetsFragment">
 
-    <data>
-        <variable
-            name="MyPetsViewModel"
-            type="com.example.android.kotlinproject1.MyPetsViewModel"/>
-        <variable
-            name="pet"
-            type="com.example.android.kotlinproject1.models.Pet"/>
-    </data>
 
    <RelativeLayout
        android:layout_width="match_parent"
@@ -43,17 +35,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/pet_list_layout">
 
-            <TextView
-                android:id="@+id/my_pets_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/mclaren"
-                android:paddingVertical="16dp"
-                android:text="@string/my_pets"
-                android:textAlignment="center"
-                android:textSize="40sp" />
 
 
         </LinearLayout>

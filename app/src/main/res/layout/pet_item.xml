@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name = "Pet"
+            type = "com.example.android.kotlinproject1.models.Pet"/>
+    </data>
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPetName"
+        android:text="{@Pet.name}"
+        android:fontFamily="@font/mclaren"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPetSex"
+        android:text="{@Pet.sex}"
+        android:fontFamily="@font/mclaren"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPetDOB"
+        android:text="{@Pet.dOB}"
+        android:fontFamily="@font/mclaren"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPetMNo"
+        android:text="{@Pet.mNo}"
+        android:fontFamily="@font/mclaren"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPetFavToy"
+        android:text="{@Pet.favToy}"
+        android:fontFamily="@font/mclaren"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPetFavFood"
+        android:text="{@Pet.favFood}"
+        android:fontFamily="@font/mclaren"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
+</layout>

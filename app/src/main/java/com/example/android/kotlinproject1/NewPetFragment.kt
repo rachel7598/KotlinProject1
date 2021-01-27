@@ -11,12 +11,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import com.example.android.kotlinproject1.databinding.FragmentNewPetBinding
-import kotlinx.android.synthetic.main.fragment_my_pets.*
-import kotlinx.android.synthetic.main.fragment_new_pet.*
+import com.example.android.kotlinproject1.models.Pet
+
 
 class NewPetFragment : Fragment() {
-
-    private var model: MyPetsViewModel? = null
+    // instantiate the MyPetsViewModel
+    private val myPetsViewModel : MyPetsViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,9 +27,14 @@ class NewPetFragment : Fragment() {
         val binding: FragmentNewPetBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_new_pet, container, false)
 
-        // set a click listener on the save button to navigate to the My Pets Fragment
+        binding.myPetsViewModel= myPetsViewModel
+        binding.pet= Pet("","","","","","")
+
+        //set a click listener on the save button to navigate to the My Pets Fragment
         binding.saveButton.setOnClickListener(
-                Navigation.createNavigateOnClickListener (R.id.action_newPetFragment_to_myPetsFragment))
+              Navigation.createNavigateOnClickListener (R.id.action_newPetFragment_to_myPetsFragment))
+
+
 // set a click listener on the cancel button to navigate to the My Pets Fragment
         binding.cancelButton.setOnClickListener(
                 Navigation.createNavigateOnClickListener (R.id.action_newPetFragment_to_myPetsFragment))

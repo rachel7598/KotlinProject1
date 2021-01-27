@@ -10,12 +10,6 @@ import androidx.navigation.Navigation
 import com.example.android.kotlinproject1.databinding.FragmentLoginBinding
 import com.example.android.kotlinproject1.databinding.FragmentWelcomeBinding
 
-
-/**
- * A simple [Fragment] subclass.
- * Use the [WelcomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class WelcomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

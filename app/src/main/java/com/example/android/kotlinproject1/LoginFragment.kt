@@ -9,12 +9,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import com.example.android.kotlinproject1.databinding.FragmentLoginBinding
 
-
-/**
- * A simple [Fragment] subclass.
- * Use the [LoginFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
