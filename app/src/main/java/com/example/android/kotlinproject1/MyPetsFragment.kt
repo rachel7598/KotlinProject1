@@ -16,19 +16,19 @@ import androidx.fragment.app.activityViewModels
 
 
 class MyPetsFragment : Fragment() {
-    // instantiate this  MyPetsViewModel
+    // instantiate  MyPetsViewModel
     private val myPetsViewModel: MyPetsViewModel by activityViewModels()
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // inflate layout
         val binding: FragmentMyPetsBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_my_pets, container,false)
-binding.lifecycleOwner=this
+         binding.lifecycleOwner = this
 
-        myPetsViewModel.petList.observe(viewLifecycleOwner, Observer{
+        myPetsViewModel.pets.observe(viewLifecycleOwner, Observer{
 
             for(pet in it){
-                DataBindingUtil.inflate<PetItemBinding>( layoutInflater,R.layout.pet_item,binding.petListLayout, true).
+                DataBindingUtil.inflate<PetItemBinding>(layoutInflater,R.layout.pet_item,binding.petListLayout, true).
                 apply{
                     this.pet = pet}
                 }})

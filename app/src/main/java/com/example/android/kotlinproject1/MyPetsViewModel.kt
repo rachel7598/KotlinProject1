@@ -12,12 +12,12 @@ import com.example.android.kotlinproject1.models.Pet
 class MyPetsViewModel : ViewModel() {
 
   // make the liveData object
-  private val listOfPets = MutableLiveData<ArrayList<Pet>>()
-  val petList: LiveData<ArrayList<Pet>>
-    get() = listOfPets
+val pets = MutableLiveData<MutableList<Pet>>(mutableListOf())
 
-  init {
-    listOfPets.value = ArrayList()
+
+fun addPet(item: Pet?) {
+  item?.let{
+    pets.value?.add(item)
   }
-
+}
 }
